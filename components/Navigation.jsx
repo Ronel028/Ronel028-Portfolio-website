@@ -47,7 +47,7 @@ const Navigation = () =>{
                         </li>
                         <li>
                             <Link 
-                                href="#"
+                                href="#contact"
                                 className="font-semibold relative text-lg
                                             after:content-[''] after:w-2 after:h-2 after:rounded after:bg-light-blue
                                             after:absolute after:bottom-[-0.875rem] after:left-[50%] after:translate-x-[-50%] after:hidden
@@ -121,7 +121,7 @@ const Navigation = () =>{
                     </li>
                     <li>
                         <Link 
-                            href="#"
+                            href="#contact"
                             className='font-semibold text-xl'
                             onClick={menu}
                         >

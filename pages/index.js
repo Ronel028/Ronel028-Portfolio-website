@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
 import Navigation from '../components/Navigation';
 import Projects from '../components/project';
-import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
+import ContactForm from '../components/ContactForm';
 
 export default function Main() {
 
@@ -219,6 +220,31 @@ export default function Main() {
                 <FaChevronRight className='text-xl md:text-lg lg:text-base'/>
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* project section */}
+        <section id='contact' className='h-auto w-100 bg-light-dark text-gray py-[121px]'>
+          <div className='container'>  
+
+            {/* title */}
+            <div className='text-center mb-[97px] md:mb-[130px] lg:mb-36'>
+              <h3 className='text-[25px] tracking-[1px] mb-6 md:text-4xl lg:text-[40px]'>
+                Contact<span className='text-light-blue'>.</span>
+              </h3>
+              <p className='font-normal text-[15px] tracking-[1px] leading-6 md:max-w-[653px] md:mx-auto md:text-[18px] lg:text-xl'>
+                I’m open to job opportunity related to web development where 
+                I can contribute, learn and grow. If you have good opportunity 
+                that matches my skills then don’t hesitate to contact me.  
+              </p>
+            </div>
+            {/* end title */}
+
+            {/* contact form */}
+            <div>
+              <ContactForm />
+            </div>
+
           </div>
         </section>
 

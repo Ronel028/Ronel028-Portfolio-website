@@ -19,7 +19,8 @@ module.exports = {
     colors:{
       'gray': '#D9D9D9',
       'light-blue': '#284B63',
-      'light-dark': '#353535'
+      'light-dark': '#353535',
+      'dark': '#1E1E1E'
     },
     extend: {
       keyframes: {
