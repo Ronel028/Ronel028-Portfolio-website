@@ -1,5 +1,8 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
 import Navigation from '../components/Navigation';
 import Projects from '../components/project';
@@ -7,6 +10,12 @@ import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
 export default function Main() {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
 
   return (
     <>
@@ -66,7 +75,7 @@ export default function Main() {
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'>
+              <h3 data-aos="fade-in" className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'>
                 About me<span className='text-light-blue'>.</span>
               </h3>
               <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'>
