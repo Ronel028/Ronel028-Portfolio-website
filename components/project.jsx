@@ -23,7 +23,7 @@ const Projects = (props) =>{
                 />
             </div>
             <div className='lg:w-1/2'>
-                <h5 className='text-[24px] text-light-dark mb-4 tracking-[1px] md:text-4xl lg:text-[26px] lg:mb-[27px]'>
+                <h5 className=' text-2xl text-light-dark mb-4 tracking-[0.0625rem] md:text-4xl lg:text-[1.625rem] lg:mb-[1.6875rem]'>
                     {title}
                 </h5>
 
@@ -31,7 +31,7 @@ const Projects = (props) =>{
                 {description}
                  {/* description here */}
 
-                <ul className='flex items-center gap-4 flex-wrap mb-8 text-sm font-bold tracking-[1px] lg:mb-[46px]'>
+                <ul className='flex items-center gap-4 flex-wrap mb-8 text-sm font-bold tracking-[0.0625rem] lg:mb-[2.875rem]'>
                     {
                         techUse.map((tech, index) =>{
                             return <li key={index}>{tech}</li>
@@ -42,7 +42,7 @@ const Projects = (props) =>{
                     <li>
                         <Link 
                             href={sourceCode}
-                            className='text-[26px]'
+                            className='text-[1.625rem]'
                         >
                             <AiFillGithub />
                         </Link>
@@ -50,7 +50,7 @@ const Projects = (props) =>{
                     <li>
                         <Link 
                             href={livePreview}
-                            className='text-[26px]'
+                            className='text-[1.625rem]'
                         >
                             <FiExternalLink />
                         </Link>

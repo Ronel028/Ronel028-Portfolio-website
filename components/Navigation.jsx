@@ -27,20 +27,20 @@ const Navigation = () =>{
                             <Link 
                                 href="#about"
                                 className="font-semibold relative text-lg
-                                            after:content-[''] after:w-2 after:h-2 after:rounded after:bg-light-blue
-                                            after:absolute after:bottom-[-0.875rem] after:left-[50%] after:translate-x-[-50%] after:hidden
-                                            hover:after:block transition-all ease-in-out duration-300"
+                                            after:content-[''] after:0 after:h-1 after:bg-light-blue
+                                            after:absolute after:bottom-[-1.4375rem] after:left-[50%] after:translate-x-[-50%]
+                                            hover:after:w-[70%] hover:after:animate-hoverLinks"
                             >
-                                About
+                                About 
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 href="#projects"
                                 className="font-semibold relative text-lg
-                                            after:content-[''] after:w-2 after:h-2 after:rounded after:bg-light-blue
-                                            after:absolute after:bottom-[-0.875rem] after:left-[50%] after:translate-x-[-50%] after:hidden
-                                            hover:after:block transition-all ease-in-out duration-300"
+                                            after:content-[''] after:0 after:h-1 after:bg-light-blue
+                                            after:absolute after:bottom-[-1.4375rem] after:left-[50%] after:translate-x-[-50%]
+                                            hover:after:w-[70%] hover:after:animate-hoverLinks"
                             >
                                 Projects
                             </Link>
@@ -49,9 +49,9 @@ const Navigation = () =>{
                             <Link 
                                 href="#contact"
                                 className="font-semibold relative text-lg
-                                            after:content-[''] after:w-2 after:h-2 after:rounded after:bg-light-blue
-                                            after:absolute after:bottom-[-0.875rem] after:left-[50%] after:translate-x-[-50%] after:hidden
-                                            hover:after:block transition-all ease-in-out duration-300"
+                                            after:content-[''] after:0 after:h-1 after:bg-light-blue
+                                            after:absolute after:bottom-[-1.4375rem] after:left-[50%] after:translate-x-[-50%]
+                                            hover:after:w-[70%] hover:after:animate-hoverLinks"
                             >
                                 Contact
                             </Link>

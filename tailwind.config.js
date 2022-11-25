@@ -34,11 +34,23 @@ module.exports = {
           '60%': {
             transform: 'translateY(-15px)'
           }
+        },
+        widthHover: {
+          '0%': {
+            width: "0%"
+          },
+          '50%': {
+            width: "50%"
+          },
+          "100%": {
+            width: "70%"
+          }
         }
       }
     },
     animation: {
-      'bounce': 'bounce 2s infinite'
+      'bounce': 'bounce 2s infinite',
+      'hoverLinks': 'widthHover 300ms linear'
     }
   },
   plugins: [],
