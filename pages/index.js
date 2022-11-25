@@ -35,18 +35,19 @@ export default function Main() {
                   <h1 className='text-[2.3125rem] md:text-[3.75rem] lg:text-[5rem] transition-all ease-out duration-150 mb-4'>
                     HI, I’M <span className='text-light-blue'>RONEL FLORIDA.</span>
                   </h1>
-                  <p className='text-[1.0625rem] md:text-[1.25rem] lg:text-[25px] lg:max-w-4xl lg:mx-auto mb-9'>
-                        Future <span className='font-bold'>software engineer</span>. I enjoy creating a 
+                  <p className='text-[1.0625rem] md:text-[1.25rem] lg:text-[25px] lg:max-w-3xl lg:mx-auto mb-10'>
+                        Future <span className='font-bold'>software engineer</span>. I enjoy creating 
                         website and web applications. I'm currently learning <span className='font-bold'>React</span> and 
                         improving my problem-solving skills to become a better developer.
                   </p>
                   <Link 
                     href='#'
-                    className='bg-light-dark text-gray py-[0.9375rem] px-[1.4375rem] font-semibold text-[1rem] tracking-[0.0625rem] 
-                                hover:bg-gray hover:text-light-dark hover:border hover:border-light-dark
-                                transition-all ease-in-out duration-300'
+                    className=' inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[1px] leading-none z-10
+                              overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
+                              after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
+                              after:transition-transform after:ease-in-out after:duration-300'
                   >
-                    Check my projects!
+                    CHECK MY WORKS!
                   </Link>
                 </div>
                 <div className='absolute bottom-[20px] left-2/4 translate-x-[-50%] hidden md:flex flex-col items-center'>
@@ -79,7 +80,7 @@ export default function Main() {
             <div className='grid grid-cols-1 grid-rows-auto gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
 
               <div>
-                <h4 className='font-semibold text-lg tracking-[1px] mb-3 md:text-[26px] md:mb-7 lg:text-2xl'>
+                <h4 className='font-semibold text-lg tracking-[1px] mb-3 md:text-[26px] md:mb-7 lg:text-xl'>
                   GET TO KNOW ME<span className='text-light-blue'>!</span>
                 </h4>
                 <p className='font-normal text-[15px] tracking-[1px] leading-6 mb-4 md:text-xl md:leading-[30px] md:mb-8 lg:text-lg lg:mb-9'>
@@ -107,7 +108,7 @@ export default function Main() {
 
               {/* skills */}
               <div>
-                <h4 className='font-semibold text-lg tracking-[1px] mb-3 md:text-[26px] md:mb-7 lg:text-2xl'>
+                <h4 className='font-semibold text-lg tracking-[1px] mb-3 md:text-[26px] md:mb-7 lg:text-xl'>
                   TECHNOLOGY THAT I’VE BEEN WORKING WITH<span className='text-light-blue'>!</span>
                 </h4>
                 <div className='flex flex-wrap gap-6 text-light-dark font-semibold text-[17px] tracking-[1px]'>
@@ -213,7 +214,7 @@ export default function Main() {
             <div className='w-full flex items-center justify-center'>
               <Link 
                 href="/all_projects" 
-                className='flex items-center gap-3 text-sm w-auto group relative bg-dark py-4 px-5 justify-self-end tracking-[1px] leading-none z-10
+                className='flex items-center gap-3 text-sm relative bg-dark py-4 px-5 justify-self-end tracking-[1px] leading-none z-10
                 overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
                 after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
                 after:transition-transform after:ease-in-out after:duration-300'>
@@ -222,17 +223,6 @@ export default function Main() {
                 <FaChevronRight className='text-sm'/>
 
               </Link>
-              {/* 
-              <Link 
-                href="/all_projects" 
-                className='flex items-center gap-3 text-xl bg-light-dark border border-light-dark text-gray 
-                            py-[11px] px-[28px] hover:bg-gray hover:text-light-dark
-                            transition-all ease-in-out duration-300 md:text-lg lg:text-base'
-              >
-                <p className=' tracking-[1px]'>Check more!</p>
-                <FaChevronRight className='text-xl md:text-lg lg:text-base'/>
-              </Link>
-              */}
             </div>
           </div>
         </section>

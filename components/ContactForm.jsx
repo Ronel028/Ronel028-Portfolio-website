@@ -37,7 +37,7 @@ const ContactForm = () =>{
                 placeholder="Message"
             >
             </textarea>
-            <button class=" w-auto group relative border-none outline-none bg-dark py-4 px-5 justify-self-end tracking-[1px] text-sm leading-none z-10
+            <button class=" w-auto relative border-none outline-none bg-dark py-4 px-5 justify-self-end tracking-[1px] text-sm leading-none z-10
                             overflow-hidden text-gray hover:text-light-dark after:content-[''] after:absolute
                             after:inset-0 after:bg-gray after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
                             after:transition-transform after:ease-in-out after:duration-300">
