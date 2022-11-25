@@ -213,6 +213,18 @@ export default function Main() {
             <div className='w-full flex items-center justify-center'>
               <Link 
                 href="/all_projects" 
+                className='flex items-center gap-3 text-sm w-auto group relative bg-dark py-4 px-5 justify-self-end tracking-[1px] leading-none z-10
+                overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
+                after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
+                after:transition-transform after:ease-in-out after:duration-300'>
+
+                <p className=' tracking-[1px]'>CHECK MORE!</p>
+                <FaChevronRight className='text-sm'/>
+
+              </Link>
+              {/* 
+              <Link 
+                href="/all_projects" 
                 className='flex items-center gap-3 text-xl bg-light-dark border border-light-dark text-gray 
                             py-[11px] px-[28px] hover:bg-gray hover:text-light-dark
                             transition-all ease-in-out duration-300 md:text-lg lg:text-base'
@@ -220,6 +232,7 @@ export default function Main() {
                 <p className=' tracking-[1px]'>Check more!</p>
                 <FaChevronRight className='text-xl md:text-lg lg:text-base'/>
               </Link>
+              */}
             </div>
           </div>
         </section>
