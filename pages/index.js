@@ -4,6 +4,7 @@ import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
 import Navigation from '../components/Navigation';
 import Projects from '../components/project';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 export default function Main() {
 
@@ -244,9 +245,16 @@ export default function Main() {
             <div>
               <ContactForm />
             </div>
-
           </div>
         </section>
+
+        {/* footer */}
+        <footer className='h-auto w-100 bg-dark text-gray py-[42px]'>
+          <div className='container'>
+            <Footer />
+          </div>
+          
+        </footer>
 
       </div>
     </>
