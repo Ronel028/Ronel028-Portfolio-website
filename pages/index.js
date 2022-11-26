@@ -13,7 +13,7 @@ export default function Main() {
 
   useEffect(() => {
     AOS.init({
-      duration : 2000
+      duration : 1000
     });
   }, []);
 
@@ -70,15 +70,23 @@ export default function Main() {
         </header>
 
         {/* about section */}
-        <section id='about'  className='h-auto w-100 bg-light-dark text-gray py-[7.5625rem]'>
+        <section id='about'  className='h-auto w-100 bg-light-dark text-gray py-[7.5625rem] overflow-hidden'>
           <div className='container'>
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 data-aos="fade-in" className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'>
+              <h3 
+                data-aos="fade-up" 
+                data-aos-duration="500"
+                className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
+              >
                 About me<span className='text-light-blue'>.</span>
               </h3>
-              <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'>
+              <p 
+                data-aos="fade-up" 
+                data-aos-duration="1000"
+                className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
+              >
                 Here you will find information about me, My currrent skills 
                 and technology the I’ve been working with.
               </p>
@@ -89,24 +97,40 @@ export default function Main() {
             <div className='grid grid-cols-1 grid-rows-auto gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
 
               <div>
-                <h4 className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'>
+                <h4 
+                  data-aos="fade-up" 
+                  data-aos-duration="300" 
+                  className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
+                >
                   GET TO KNOW ME<span className='text-light-blue'>!</span>
                 </h4>
-                <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'>
+                <p 
+                  data-aos="fade-up" 
+                  data-aos-duration="500" 
+                  className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
+                >
                   Lorem ipsum dolor sit amet, consectetur 
                   adipiscing elit. Nunc vulputate libero et velit 
                   interdum, ac aliquet odio mattis. Class aptent 
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
                 </p>
-                <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'>
+                <p 
+                  data-aos="fade-up" 
+                  data-aos-duration="700" 
+                  className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
+                >
                   Lorem ipsum dolor sit amet, consectetur 
                   adipiscing elit. Nunc vulputate libero et velit 
                   interdum, ac aliquet odio mattis. Class aptent 
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
                 </p>
-                <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'>
+                <p 
+                  data-aos="fade-up" 
+                  data-aos-duration="900" 
+                  className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
+                >
                   Lorem ipsum dolor sit amet, consectetur 
                   adipiscing elit. Nunc vulputate libero et velit 
                   interdum, ac aliquet odio mattis. Class aptent 
@@ -117,35 +141,77 @@ export default function Main() {
 
               {/* skills */}
               <div>
-                <h4 className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'>
+                <h4 
+                  data-aos="fade-up" 
+                  data-aos-duration="300" 
+                  className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
+                >
                   TECHNOLOGY THAT I’VE BEEN WORKING WITH<span className='text-light-blue'>!</span>
                 </h4>
-                <div className='flex flex-wrap gap-6 text-light-dark font-semibold text-[1.0625rem] tracking-[0.0625rem]'>
-                  <div className='py-3 px-4 bg-gray'>
+                <div
+                  className='flex flex-wrap gap-6 text-light-dark font-semibold text-[1.0625rem] tracking-[0.0625rem]'
+                >
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500" 
+                    className='py-3 px-4 bg-gray'
+                  >
                     HTML
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     CSS
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     Javascript
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     SASS
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     NODE
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     React
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     TailwindCSS
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     Responsive Design
                   </div>
-                  <div className='py-3 px-4 bg-gray'>
+                  <div 
+                    data-aos="fade-up" 
+                    data-aos-duration="500"  
+                    className='py-3 px-4 bg-gray'
+                  >
                     SQL Basic
                   </div>
                 </div>
@@ -157,15 +223,23 @@ export default function Main() {
         </section>
         {/* end about section */}
 
-        <section id='projects' className='h-auto w-100 bg-gray text-light-dark py-[7.5625rem]'>
+        <section id='projects' className='h-auto w-100 bg-gray text-light-dark py-[7.5625rem] overflow-hidden'>
           <div className='container'>
 
              {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'>
+              <h3 
+                data-aos="fade-up" 
+                data-aos-duration="500"
+                className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
+              >
                 My works<span className='text-light-blue'>.</span>
               </h3>
-              <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'>
+              <p 
+                data-aos="fade-up" 
+                data-aos-duration="1000"
+                className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
+              >
                 Here you will find all of my personal projects 
                 that I develop. 
               </p>
@@ -223,6 +297,8 @@ export default function Main() {
             <div className='w-full flex items-center justify-center'>
               <Link 
                 href="/all_projects" 
+                data-aos="flip-down"
+                data-aos-duration="500"
                 className='flex items-center gap-3 text-sm relative bg-dark py-4 px-5 justify-self-end tracking-[0.0625rem] leading-none z-10
                 overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
                 after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
@@ -237,15 +313,23 @@ export default function Main() {
         </section>
 
         {/* project section */}
-        <section id='contact' className='h-auto w-100 bg-light-dark text-gray py-[7.5625rem]'>
+        <section id='contact' className='h-auto w-100 bg-light-dark text-gray py-[7.5625rem] overflow-hidden'>
           <div className='container'>  
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'>
+              <h3 
+                data-aos="fade-up" 
+                data-aos-duration="500"
+                className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
+              >
                 Contact<span className='text-light-blue'>.</span>
               </h3>
-              <p className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-[40.8125rem] md:mx-auto md:text-lg lg:text-xl'>
+              <p 
+                data-aos="fade-up" 
+                data-aos-duration="1000"
+                className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-[40.8125rem] md:mx-auto md:text-lg lg:text-xl'
+              >
                 I’m open to job opportunity related to web development where 
                 I can contribute, learn and grow. If you have good opportunity 
                 that matches my skills then don’t hesitate to contact me.  
@@ -261,7 +345,7 @@ export default function Main() {
         </section>
 
         {/* footer */}
-        <footer className='h-auto w-100 bg-dark text-gray py-[2.625rem]'>
+        <footer className='h-auto w-100 bg-dark text-gray py-[2.625rem] overflow-hidden'>
           <div className='container'>
             <Footer />
           </div>

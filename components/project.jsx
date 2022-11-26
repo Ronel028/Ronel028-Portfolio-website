@@ -9,7 +9,10 @@ const Projects = (props) =>{
 
     return (
         <div className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}>
-            <div className='w-full lg:w-1/2 mb-7 relative 
+            <div 
+                data-aos="fade-right"
+                data-aos-duration="500"
+                className='w-full lg:w-1/2 mb-7 relative 
                             before:content[""] before:absolute before:inset-0 before:bg-light-dark 
                             before:opacity-[70%] hover:before:opacity-0 
                             before:transition-opacity ease-in-out before:duration-300 cursor-pointer'>
@@ -22,7 +25,11 @@ const Projects = (props) =>{
                     height={1000}
                 />
             </div>
-            <div className='lg:w-1/2'>
+            <div 
+                data-aos="fade-left"
+                data-aos-duration="500"
+                className='lg:w-1/2'
+            >
                 <h5 className=' text-2xl text-light-dark mb-4 tracking-[0.0625rem] md:text-4xl lg:text-[1.625rem] lg:mb-[1.6875rem]'>
                     {title}
                 </h5>
