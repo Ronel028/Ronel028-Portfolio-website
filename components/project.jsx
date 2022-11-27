@@ -5,12 +5,12 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const Projects = (props) =>{
 
-    const { imageSrc, title, description, techUse, sourceCode, livePreview, flex_row } = props
+    const { imageSrc, title, description, techUse, sourceCode, livePreview, flex_row, fadeImage, fadeContent } = props
 
     return (
         <div className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}>
             <div 
-                data-aos="fade-right"
+                data-aos={fadeImage}
                 data-aos-duration="500"
                 className='w-full lg:w-1/2 mb-7 relative 
                             before:content[""] before:absolute before:inset-0 before:bg-light-dark 
@@ -26,7 +26,7 @@ const Projects = (props) =>{
                 />
             </div>
             <div 
-                data-aos="fade-left"
+                data-aos={fadeContent}
                 data-aos-duration="500"
                 className='lg:w-1/2'
             >

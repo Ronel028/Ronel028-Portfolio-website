@@ -254,13 +254,15 @@ export default function Main() {
                 techUse={["Html", "Sass", "Javascript", "shrtcode API"]}
                 sourceCode="https://github.com/Ronel028/URL-shortening-api"
                 livePreview="https://url-shortening-api-psi.vercel.app/"
-                flex_row="lg:flex-row"
                 description={<p className='font-normal text-[1rem] text-light-dark tracking-[0.0625rem] leading-6 mb-7 md:text-lg lg:mb-[2.875rem]'>
                                 URL Shortly Landing page is challenge 
                                 from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
                                 This landing page can make the long url links convert into short url by the
                                 help of <Link href="https://shrtco.de/" className='font-bold hover:underline'>shrtcode API</Link>
                             </p>}
+              flex_row="lg:flex-row"
+              fadeImage="fade-right"
+              fadeContent="fade-left"
               />
               <Projects 
                 imageSrc="/images/projects/advice-generator-app.webp"
@@ -268,12 +270,14 @@ export default function Main() {
                 techUse={["Vite", "Sass", "Javascript", "Advice Slip API"]}
                 sourceCode="https://github.com/Ronel028/fem-advice-generator"
                 livePreview="https://web-advice-generator.herokuapp.com/"
-                flex_row="lg:flex-row-reverse"
                 description={<p className='font-normal text-[1rem] text-light-dark tracking-[0.0625rem] leading-6 mb-7 md:text-lg lg:mb-[2.875rem]'>
                                 Advice generator app is challenge 
                                 from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor. </Link>
                                 That you can generate random advice from <Link href="https://api.adviceslip.com/" className='font-bold hover:underline'>Advice Slip API.</Link>
                             </p>}
+                flex_row="lg:flex-row-reverse"
+                fadeImage="fade-left"
+                fadeContent="fade-right"
               />
               <Projects 
                 imageSrc="/images/projects/bms.webp"
@@ -281,7 +285,6 @@ export default function Main() {
                 techUse={["React", "Node", "Express", "Bootstrap", "Sass", "MySql"]}
                 sourceCode="https://github.com/Ronel028/barangay-management-system-final"
                 livePreview="https://github.com/Ronel028/barangay-management-system-final"
-                flex_row="lg:flex-row"
                 description={<p className='font-normal text-[1rem] text-light-dark tracking-[0.0625rem] leading-6 mb-7 md:text-lg lg:mb-[2.875rem]'>
                                 Barangay Management System is my personal project. I develop this in order to
                                 practice my self in front-end and back-end development and also in database which is MySql.
@@ -289,6 +292,9 @@ export default function Main() {
                                 Barangay Official, resident, blotter, and certificate.
 
                             </p>}
+                flex_row="lg:flex-row"
+                fadeImage="fade-right"
+                fadeContent="fade-left"
               />
             </div>
             {/* end project list */}
