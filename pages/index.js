@@ -302,7 +302,7 @@ export default function Main() {
             {/* show more button */}
             <div className='w-full flex items-center justify-center'>
               <Link 
-                href="/all_projects" 
+                href="/projects" 
                 data-aos="flip-down"
                 data-aos-duration="500"
                 className='flex items-center gap-3 text-sm relative bg-dark py-4 px-5 justify-self-end tracking-[0.0625rem] leading-none z-10

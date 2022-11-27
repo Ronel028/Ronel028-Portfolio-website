@@ -10,14 +10,16 @@ const Navigation = () =>{
     const menu = () =>{
         setIsOpen(!isOpen)
     }
-
+    const home = () =>{
+        setIsOpen(false)
+    }
     const openMenu = isOpen ? "mt-[4.125rem]" : "mt-[-200%]"
 
     return (
         <>
             <nav className='bg-gray py-5 fixed top-0 left-0 right-0 z-[999] drop-shadow-lg'>
                 <div className='container mx-auto flex items-center justify-between'>
-                    <Link href='/'>
+                    <Link href='/' onClick={home}>
                         <h3 className='text-xl text-light-dark'>
                             R<span className='text-light-blue'>.</span>FLORIDA
                         </h3> 
