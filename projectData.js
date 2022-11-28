@@ -77,7 +77,7 @@ export default [
                             Space Tourism Website is challenge 
                             from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link> You
                             can see from this website the information of one planet and three Moons which is Moon, Mars, Europa, Titan and the 
-                            information of the crew and also the spaceship that use to travel from one this planet.
+                            information of the crew and also the spaceship that use to travel from this planet.
                         </p>,
         "flex_row": "lg:flex-row",
         "fadeImage":"fade-right",
@@ -108,6 +108,118 @@ export default [
                             Calculator App is challenge 
                             from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link> It 
                             is a calculator with three different theme color.
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/user-management-system.webp",
+        "title": "User Management System",
+        "techUse": ["EJS", "Scss", "Javascript", "Express", "Mongoose"],
+        "sourceCode": "https://github.com/Ronel028/user-management-system",
+        "livePreview": "https://web-based-user-management.herokuapp.com/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            User Management System is my personal project that you can add data of person
+                            and save to database and you can set if the person is active or inActive.
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/github-user-search.webp",
+        "title": "Github User Search",
+        "techUse": ["Html", "Scss", "Javascript", "Express", "GitHub users API"],
+        "sourceCode": "https://github.com/Ronel028/github-user-search",
+        "livePreview": "https://github-user-search-psi-teal.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            Through this you can search github user by their username on github and display their public
+                            information. To achieve this I'm 
+                            using <Link href="https://docs.github.com/en/rest/users/users#get-a-user" className="font-bold hover:underline">GitHub users API.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/huddle-landing-page.webp",
+        "title": "Huddle Landing page",
+        "techUse": ["Vite", "Scss", "Javascript", "Framer motion"],
+        "sourceCode": "https://github.com/Ronel028/fem-huddle-landing-page",
+        "livePreview": "https://huddle-landingpage.herokuapp.com/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link> It
+                            is a landing page of huddle website.
+
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/rest-country.webp",
+        "title": "Rest Country",
+        "techUse": ["Html", "Scss", "Javascript", "Rest Country API"],
+        "sourceCode": "https://github.com/Ronel028/fem-country-search",
+        "livePreview": "https://fem-country-search.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link> This
+                            website you can see the information of every country. It has search functionality, filter country by 
+                            region and also is has theme switcher from dark to light color. The data is get from <Link href="https://restcountries.com/" className="font-bold hover:underline">Rest Country API.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/fylodark-landing-page.webp",
+        "title": "Fylo Landing page",
+        "techUse": ["Html", "Css", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-fylo-landing-page",
+        "livePreview": "https://fem-fylo-landing-page.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/tip-calculator.webp",
+        "title": "Tip Calculator",
+        "techUse": ["Html", "Scss", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-tip-calculator",
+        "livePreview": "https://fem-tip-calculator-henna.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link> It
+                            can calculate tip amount and the total amount.
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/sunnySide-landing-page.webp",
+        "title": "Sunny side Landing page",
+        "techUse": ["Html", "Scss", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-sunnyside-landing-page",
+        "livePreview": "https://fem-sunnyside-landing-page-pied.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/loopstudio-landing-page.webp",
+        "title": "Loop Studion Landing page",
+        "techUse": ["Html", "Scss", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-loopstudios-landing-page",
+        "livePreview": "https://fem-loopstudios-landing-page-taupe.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
                         </p>,
         "flex_row": "lg:flex-row",
         "fadeImage":"fade-right",

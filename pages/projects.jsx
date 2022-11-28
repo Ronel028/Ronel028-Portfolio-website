@@ -28,7 +28,7 @@ const AllProjects = () =>{
                 </div>
             </section>
             {/* project list */}
-            <section className='mt-[80vh] w-full h-auto bg-gray overflow-hidden pt-[200px] relative border-t-2 border-light-blue'>
+            <section className='mt-[90vh] w-full h-auto bg-gray overflow-hidden pt-[200px] relative border-t-2 border-light-blue'>
                 <div className='container'>
                     <div className='absolute top-10 left-2/4 translate-x-[-50%] flex flex-col items-center'>
                         <div className="animate-bounce mb-1">
