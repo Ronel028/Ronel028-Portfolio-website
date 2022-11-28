@@ -62,7 +62,7 @@ const Navigation = () =>{
                     <ul className='hidden md:flex items-center gap-4'>
                         <li>
                             <Link 
-                                href="#"
+                                href="https://github.com/Ronel028"
                                 className='text-2xl hover:text-light-blue transition-colors ease-in-out duration-300'
                             >
                                 <AiFillGithub />
@@ -70,7 +70,7 @@ const Navigation = () =>{
                         </li>
                         <li>
                             <Link 
-                                href="#"
+                                href="https://www.linkedin.com/in/ronelflorida/"
                                 className='text-2xl hover:text-light-blue transition-colors ease-in-out duration-300'
                             >
                                 <AiFillLinkedin />
@@ -134,7 +134,7 @@ const Navigation = () =>{
                 <ul className='flex items-center justify-center text-gray pt-8 border-t-[0.0625rem] border-gray gap-5'>
                     <li>
                         <Link 
-                            href="#"
+                            href="https://github.com/Ronel028"
                             className='text-3xl'
                         >
                             <AiFillGithub />
@@ -142,7 +142,7 @@ const Navigation = () =>{
                     </li>
                     <li>
                         <Link 
-                            href="#"
+                            href="https://www.linkedin.com/in/ronelflorida/"
                             className='text-3xl'
                         >
                             <AiFillLinkedin />

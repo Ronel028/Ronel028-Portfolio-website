@@ -50,7 +50,7 @@ export default function Main() {
                         improving my problem-solving skills to become a better developer.
                   </p>
                   <Link 
-                    href='#'
+                    href='/projects'
                     className=' inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[0.0625rem] leading-none z-10
                               overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
                               after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
