@@ -225,6 +225,84 @@ export default [
         "fadeImage":"fade-right",
         "fadeContent":"fade-left"
     },
+    {
+        "imageSrc": "/images/projects/testimonial-grid-section.webp",
+        "title": "Testimonial Grid Section",
+        "techUse": ["Html", "Scss"],
+        "sourceCode": "https://github.com/Ronel028/fem-testimonials-grid-section",
+        "livePreview": "https://fem-testimonils-grid-g5sl.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/blogr-landing-page.webp",
+        "title": "Blogr Landing Page",
+        "techUse": ["Html", "Scss", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-blogr-landing-page",
+        "livePreview": "https://fem-blogr-landing-page-nine.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/stats-card-component.webp",
+        "title": "Stats Card Component",
+        "techUse": ["Html", "Scss"],
+        "sourceCode": "https://github.com/Ronel028/stats-preview-card-FrontEndMentorChallenge",
+        "livePreview": "https://stats-preview-component-3fwm.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/clipboard-landing-page.webp",
+        "title": "Clipboard landing page",
+        "techUse": ["Html", "Scss"],
+        "sourceCode": "https://github.com/Ronel028/FEM-clipboard-landing-page",
+        "livePreview": "https://fem-clipboard-landing-page-steel.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
+    {
+        "imageSrc": "/images/projects/easybank-landing-page.webp",
+        "title": "EasyBank landing page",
+        "techUse": ["Html", "Scss", "Javascript"],
+        "sourceCode": "https://github.com/Ronel028/fem-easybank-landing-page",
+        "livePreview": "https://fem-easybank-landing-page-six.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row-reverse",
+        "fadeImage":"fade-left",
+        "fadeContent":"fade-right"
+    },
+    {
+        "imageSrc": "/images/projects/order-summary-card.webp",
+        "title": "Order Summary Component",
+        "techUse": ["Html", "Scss"],
+        "sourceCode": "https://github.com/Ronel028/Order-summary",
+        "livePreview": "https://order-summary-dun.vercel.app/",
+        "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
+                            It is challenge from <Link href="https://www.frontendmentor.io/" className='font-bold hover:underline'>Frontend Mentor.</Link>
+                        </p>,
+        "flex_row": "lg:flex-row",
+        "fadeImage":"fade-right",
+        "fadeContent":"fade-left"
+    },
 ]
 
 /* 

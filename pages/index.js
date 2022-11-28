@@ -351,12 +351,7 @@ export default function Main() {
         </section>
 
         {/* footer */}
-        <footer className='h-auto w-100 bg-dark text-gray py-[2.625rem] overflow-hidden'>
-          <div className='container'>
-            <Footer />
-          </div>
-          
-        </footer>
+        <Footer />
 
       </div>
     </>

@@ -3,6 +3,7 @@ import { FaArrowDown } from 'react-icons/fa'
 import Navigation from '../components/ProjectNavigation'
 import Projects from "../components/project"
 import projectData from '../projectData'
+import Footer from '../components/Footer'
 
 const AllProjects = () =>{
 
@@ -65,6 +66,8 @@ const AllProjects = () =>{
             </section>
             {/* end project list */}
             
+            <Footer />
+
         </>
     )
 }
