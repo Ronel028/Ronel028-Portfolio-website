@@ -1,5 +1,8 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
+import validator from "validator"
+import { AiFillCheckCircle } from 'react-icons/ai'
+import { MdOutlineError } from 'react-icons/md'
 
 const ContactForm = () =>{
 
@@ -9,6 +12,13 @@ const ContactForm = () =>{
         subject: '',
         message: ''
     })
+    const [sending, setSending] = useState(false)
+    const [emailSent, setEmailSent] = useState({
+        display: false,
+        bgColor: '',
+        message: null
+    })
+
 
     const handleChange = (event) =>{
         const { name, value } = event.target
@@ -19,10 +29,46 @@ const ContactForm = () =>{
     }
 
     const sendEmail = (e) =>{
+
         e.preventDefault()
+
+        if(!emailForm.name || !emailForm.email || !emailForm.subject || !emailForm.message){
+            setEmailSent({
+                ...emailSent,
+                display: true,
+                bgColor: 'bg-[#9C254D]',
+                message: <p className=" tracking-widest flex items-center gap-3"><MdOutlineError /> Form can't be empty!</p>
+            })
+            setTimeout(() =>{
+                setEmailSent({
+                    ...emailSent,
+                    display: false,
+                    bgColor: '',
+                    message: null
+                })
+            }, 2000)
+            return
+        }
+        if(!validator.isEmail(emailForm.email)){
+            setEmailSent({
+                ...emailSent,
+                display: true,
+                bgColor: 'bg-[#9C254D]',
+                message: <p className=" tracking-widest flex items-center gap-3"><MdOutlineError /> Invalid email</p>
+            })
+            setTimeout(() =>{
+                setEmailSent({
+                    ...emailSent,
+                    display: false,
+                    bgColor: '',
+                    message: null
+                })
+            }, 2000)
+            return
+        }
+        setSending(true)
         emailjs.send('service_xpbt91f', 'template_4yhup3a', emailForm, 'VFk7agYjf_uCW_tqW')
         .then((result) => {
-            console.log(result.text);
             if(result.text === 'OK'){
                 setEmailForm({
                     ...emailForm,
@@ -31,14 +77,47 @@ const ContactForm = () =>{
                     subject: '',
                     message: ''
                 })
+                setSending(false)
+                setEmailSent({
+                    ...emailSent,
+                    display: true,
+                    bgColor: 'bg-[#379237]',
+                    message: <p className=" tracking-widest flex items-center gap-3"><AiFillCheckCircle /> Message sent</p>
+                })
+                setTimeout(() =>{
+                    setEmailSent({
+                        ...emailSent,
+                        display: false,
+                        bgColor: '',
+                        message: null
+                    })
+                }, 2000)
             }
-        }, (error) => {
-            console.log(error.text);
+        }).catch(error =>{
+            setEmailSent({
+                ...emailSent,
+                display: true,
+                bgColor: 'bg-[#9C254D]',
+                message: <p className=" tracking-widest flex items-center gap-3"><MdOutlineError /> Something wen't wrong. Please try again...</p>
+            })
+            setTimeout(() =>{
+                setEmailSent({
+                    ...emailSent,
+                    display: false,
+                    bgColor: '',
+                    message: null
+                })
+            }, 2000)
         });
     }
 
     return (
         <form className="w-full h-auto grid grid-flow-row gap-y-3 lg:max-w-[50.875rem] lg:mx-auto">
+            <div className={`w-auto py-4 px-5 items-center gap-3 transition-all ease-in-out duration-300
+                ${emailSent.bgColor} ${emailSent.display ? "block" : "hidden"}`}
+            >
+                {emailSent.message}
+            </div>
             <div className="grid grid-rows-2 grid-cols-1 gap-y-3 md:grid-cols-2 md:grid-rows-1 md:gap-x-3">
                 <input 
                     data-aos="flip-down"
@@ -47,7 +126,7 @@ const ContactForm = () =>{
                                 tracking-[0.0625rem] outline-none"
                     type="text" 
                     id="name" 
-                    placeholder="Name" 
+                    placeholder="Name"
                     name="name" 
                     value={emailForm.name}
                     onChange={handleChange}
@@ -59,7 +138,7 @@ const ContactForm = () =>{
                                 tracking-[0.0625rem] outline-none"
                     type="email" 
                     id="email" 
-                    placeholder="Email" 
+                    placeholder="Email"
                     name="email" 
                     value={emailForm.email}
                     onChange={handleChange}
@@ -72,7 +151,7 @@ const ContactForm = () =>{
                             tracking-[0.0625rem] outline-none"
                 type="text" 
                 id="subject"
-                placeholder="Subject" 
+                placeholder="Subject"
                 name="subject" 
                 value={emailForm.subject}
                 onChange={handleChange}
@@ -100,7 +179,9 @@ const ContactForm = () =>{
                                 after:transition-transform after:ease-in-out after:duration-300"
                 onClick={sendEmail}
             >
-                SEND MESSAGE!
+                {
+                    sending ? "SENDING..." : "SEND MESSAGE!" 
+                }
             </button>
         </form>
     )
