@@ -67,7 +67,7 @@ const ContactForm = () =>{
             return
         }
         setSending(true)
-        emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, emailForm, process.env.NEXT_PUBLIC_PUBLIC_KEY)
+        emailjs.send('service_xpbt91f', 'template_4yhup3a', emailForm, 'VFk7agYjf_uCW_tqW')
         .then((result) => {
             if(result.text === 'OK'){
                 setEmailForm({
