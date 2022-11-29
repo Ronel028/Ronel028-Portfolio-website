@@ -118,7 +118,7 @@ export default [
         "title": "User Management System",
         "techUse": ["EJS", "Scss", "Javascript", "Express", "Mongoose"],
         "sourceCode": "https://github.com/Ronel028/user-management-system",
-        "livePreview": "https://web-based-user-management.herokuapp.com/",
+        "livePreview": "https://user-management-system-73ja.vercel.app/",
         "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
                             User Management System is my personal project that you can add data of person
                             and save to database and you can set if the person is active or inActive.
