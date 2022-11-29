@@ -12,9 +12,7 @@ import Footer from '../components/Footer';
 export default function Main() {
 
   useEffect(() => {
-    AOS.init({
-      duration : 1000
-    });
+    AOS.init({});
   }, []);
 
   return (
@@ -39,19 +37,19 @@ export default function Main() {
 
               {/* HERO SECTION*/}
               <div className='absolute inset-0 bg-gray opacity-[90%]'></div>
-              <main className='container relative w-full h-auto min-h-screen flex justify-center items-center text-center'>
+              <main className=' animate-pageLoad container relative w-full h-auto min-h-screen flex justify-center items-center text-center'>
                 <div className='z-20'>
                   <h1 className='text-[2.3125rem] md:text-[3.75rem] lg:text-[5rem] transition-all ease-out duration-150 mb-4'>
                     HI, I’M <span className='text-light-blue'>RONEL FLORIDA.</span>
                   </h1>
-                  <p className='text-[1.0625rem] md:text-[1.25rem] lg:text-[1.5625rem] lg:max-w-3xl lg:mx-auto mb-10'>
+                  <p className=' text-[1.0625rem] md:text-[1.25rem] lg:text-[1.5625rem] lg:max-w-3xl lg:mx-auto mb-10'>
                         Future <span className='font-bold'>software engineer</span>. I enjoy creating 
                         website and web applications. I'm currently learning <span className='font-bold'>React</span> and 
                         improving my problem-solving skills to become a better developer.
                   </p>
                   <Link 
                     href='/projects'
-                    className=' inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[0.0625rem] leading-none z-10
+                    className='inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[0.0625rem] leading-none z-10
                               overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
                               after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
                               after:transition-transform after:ease-in-out after:duration-300'

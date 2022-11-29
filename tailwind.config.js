@@ -45,12 +45,21 @@ module.exports = {
           "100%": {
             width: "70%"
           }
+        },
+        pageLoad: {
+          'from': {
+            opacity: '0'
+          },
+          'to': {
+            opacity: '1'
+          }
         }
       }
     },
     animation: {
       'bounce': 'bounce 2s infinite',
-      'hoverLinks': 'widthHover 300ms linear'
+      'hoverLinks': 'widthHover 300ms linear',
+      'pageLoad': 'pageLoad 1s',
     }
   },
   plugins: [],
