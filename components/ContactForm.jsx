@@ -112,7 +112,7 @@ const ContactForm = () =>{
     }
 
     return (
-        <form data-aos="zoom-in" data-aos-duration="500" className="w-full h-auto grid grid-flow-row gap-y-3 lg:max-w-[50.875rem] lg:mx-auto">
+        <form className="w-full h-auto grid grid-flow-row gap-y-3 lg:max-w-[50.875rem] lg:mx-auto">
             <div className={`w-auto py-4 px-5 items-center gap-3 transition-all ease-in-out duration-300
                 ${emailSent.bgColor} ${emailSent.display ? "block" : "hidden"}`}
             >

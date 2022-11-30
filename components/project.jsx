@@ -7,11 +7,10 @@ const Projects = (props) =>{
 
     const { imageSrc, title, description, techUse, sourceCode, livePreview, flex_row, fadeImage, fadeContent } = props
 
+
     return (
         <div className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}>
-            <div 
-                data-aos={fadeImage}
-                data-aos-duration="500"
+            <div
                 className='w-full lg:w-1/2 mb-7 relative 
                             before:content[""] before:absolute before:inset-0 before:bg-light-dark 
                             before:opacity-[70%] hover:before:opacity-0 
@@ -25,9 +24,7 @@ const Projects = (props) =>{
                     height={1000}
                 />
             </div>
-            <div 
-                data-aos={fadeContent}
-                data-aos-duration="500"
+            <div
                 className='lg:w-1/2'
             >
                 <h5 className=' text-2xl text-light-dark mb-4 tracking-[0.0625rem] md:text-4xl lg:text-[1.625rem] lg:mb-[1.6875rem]'>

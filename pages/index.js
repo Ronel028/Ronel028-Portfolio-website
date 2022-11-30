@@ -1,10 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
 import Navigation from '../components/Navigation';
 import Projects from '../components/project';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+
+const animateLoad = {
+  hidden: { 
+    scale: .8,
+    opacity: 0 
+  },
+  show: {
+    scale: 1,
+    opacity: 1
+  }
+}
 
 export default function Main() {
 
@@ -31,25 +43,45 @@ export default function Main() {
 
               {/* HERO SECTION*/}
               <div className='absolute inset-0 bg-gray opacity-[90%]'></div>
-              <main className=' animate-pageLoad container relative w-full h-auto min-h-screen flex justify-center items-center text-center'>
+              <main className='container relative w-full h-auto min-h-screen flex justify-center items-center text-center'>
                 <div className='z-20'>
-                  <h1 className='text-[2.3125rem] md:text-[3.75rem] lg:text-[5rem] transition-all ease-out duration-150 mb-4'>
+                  <motion.h1 
+                    initial="hidden"
+                    animate="show"
+                    transition={{delay: .2}}
+                    variants={animateLoad}
+                    className='text-[2.3125rem] md:text-[3.75rem] lg:text-[5rem] transition-all ease-out duration-150 mb-4'
+                  >
                     HI, I’M <span className='text-light-blue'>RONEL FLORIDA.</span>
-                  </h1>
-                  <p className=' text-[1.0625rem] md:text-[1.25rem] lg:text-[1.5625rem] lg:max-w-3xl lg:mx-auto mb-10'>
+                  </motion.h1>
+                  <motion.p 
+                    initial="hidden"
+                    animate="show"
+                    transition={{delay: .3}}
+                    variants={animateLoad}
+                    className=' text-[1.0625rem] md:text-[1.25rem] lg:text-[1.5625rem] lg:max-w-3xl lg:mx-auto mb-10'
+                  >
                         Future <span className='font-bold'>software engineer</span>. I enjoy creating 
                         website and web applications. I'm currently learning <span className='font-bold'>React</span> and 
                         improving my problem-solving skills to become a better developer.
-                  </p>
-                  <Link 
-                    href='/projects'
-                    className='inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[0.0625rem] leading-none z-10
-                              overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
-                              after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
-                              after:transition-transform after:ease-in-out after:duration-300'
+                  </motion.p>
+                  <motion.div 
+                    initial="hidden"
+                    animate="show"
+                    transition={{delay: .4}}
+                    variants={animateLoad}
+                    className='h-auto w-auto flex items-center justify-center'
                   >
-                    CHECK MY WORKS!
-                  </Link>
+                    <Link
+                      href='/projects'
+                      className='inline-block text-sm lg:text-base relative bg-dark py-4 px-5 tracking-[0.0625rem] leading-none z-10
+                                overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
+                                after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
+                                after:transition-transform after:ease-in-out after:duration-300'
+                    >
+                      CHECK MY WORKS!
+                    </Link>
+                  </motion.div>
                 </div>
                 <div className='absolute bottom-5 left-2/4 translate-x-[-50%] hidden md:flex flex-col items-center'>
                   <div className="animate-bounce mb-1">
@@ -68,15 +100,11 @@ export default function Main() {
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
               <h3 
-                data-aos="fade-up" 
-                data-aos-duration="500"
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 About me<span className='text-light-blue'>.</span>
               </h3>
               <p 
-                data-aos="fade-up" 
-                data-aos-duration="1000"
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
               >
                 Here you will find information about me, My currrent skills 
@@ -89,16 +117,12 @@ export default function Main() {
             <div className='grid grid-cols-1 grid-rows-auto gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
 
               <div>
-                <h4 
-                  data-aos="fade-up" 
-                  data-aos-duration="300" 
+                <h4
                   className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
                 >
                   GET TO KNOW ME<span className='text-light-blue'>!</span>
                 </h4>
-                <p 
-                  data-aos="fade-up" 
-                  data-aos-duration="500" 
+                <p
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -108,8 +132,6 @@ export default function Main() {
                   nostra, per inceptos himenaeos.
                 </p>
                 <p 
-                  data-aos="fade-up" 
-                  data-aos-duration="700" 
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -118,9 +140,7 @@ export default function Main() {
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
                 </p>
-                <p 
-                  data-aos="fade-up" 
-                  data-aos-duration="900" 
+                <p
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -133,9 +153,7 @@ export default function Main() {
 
               {/* skills */}
               <div>
-                <h4 
-                  data-aos="fade-up" 
-                  data-aos-duration="300" 
+                <h4
                   className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
                 >
                   TECHNOLOGY THAT I’VE BEEN WORKING WITH<span className='text-light-blue'>!</span>
@@ -143,65 +161,47 @@ export default function Main() {
                 <div
                   className='flex flex-wrap gap-6 text-light-dark font-semibold text-[1.0625rem] tracking-[0.0625rem]'
                 >
-                  <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500" 
+                  <div
                     className='py-3 px-4 bg-gray'
                   >
                     HTML
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     CSS
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     Javascript
                   </div>
-                  <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
+                  <div
                     className='py-3 px-4 bg-gray'
                   >
                     SASS
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     NODE
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     React
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     TailwindCSS
                   </div>
                   <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
                     className='py-3 px-4 bg-gray'
                   >
                     Responsive Design
                   </div>
-                  <div 
-                    data-aos="fade-up" 
-                    data-aos-duration="500"  
+                  <div  
                     className='py-3 px-4 bg-gray'
                   >
                     SQL Basic
@@ -220,16 +220,12 @@ export default function Main() {
 
              {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 
-                data-aos="fade-up" 
-                data-aos-duration="500"
+              <h3
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 My works<span className='text-light-blue'>.</span>
               </h3>
-              <p 
-                data-aos="fade-up" 
-                data-aos-duration="1000"
+              <p
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
               >
                 Here you will find all of my personal projects 
@@ -253,8 +249,6 @@ export default function Main() {
                                 help of <Link href="https://shrtco.de/" className='font-bold hover:underline'>shrtcode API</Link>
                             </p>}
               flex_row="lg:flex-row"
-              fadeImage="fade-right"
-              fadeContent="fade-left"
               />
               <Projects 
                 imageSrc="/images/projects/advice-generator-app.webp"
@@ -268,8 +262,6 @@ export default function Main() {
                                 That you can generate random advice from <Link href="https://api.adviceslip.com/" className='font-bold hover:underline'>Advice Slip API.</Link>
                             </p>}
                 flex_row="lg:flex-row-reverse"
-                fadeImage="fade-left"
-                fadeContent="fade-right"
               />
               <Projects 
                 imageSrc="/images/projects/bms.webp"
@@ -285,8 +277,6 @@ export default function Main() {
 
                             </p>}
                 flex_row="lg:flex-row"
-                fadeImage="fade-right"
-                fadeContent="fade-left"
               />
             </div>
             {/* end project list */}
@@ -294,9 +284,7 @@ export default function Main() {
             {/* show more button */}
             <div className='w-full flex items-center justify-center'>
               <Link 
-                href="/projects" 
-                data-aos="flip-down"
-                data-aos-duration="500"
+                href="/projects"
                 className='flex items-center gap-3 text-sm relative bg-dark py-4 px-5 justify-self-end tracking-[0.0625rem] leading-none z-10
                 overflow-hidden text-gray hover:text-gray after:content-[""] after:absolute
                 after:inset-0 after:bg-light-blue after:translate-x-[-101%] hover:after:translate-x-0 after:z-[-1]
@@ -316,16 +304,12 @@ export default function Main() {
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 
-                data-aos="fade-up" 
-                data-aos-duration="500"
+              <h3
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 Contact<span className='text-light-blue'>.</span>
               </h3>
               <p 
-                data-aos="fade-up" 
-                data-aos-duration="1000"
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-[40.8125rem] md:mx-auto md:text-lg lg:text-xl'
               >
                 I’m open to job opportunity related to web development where 

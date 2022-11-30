@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Navigation = () =>{
@@ -17,7 +18,15 @@ const Navigation = () =>{
 
     return (
         <>
-            <nav className='bg-gray py-5 fixed top-0 left-0 right-0 z-[999] drop-shadow-lg'>
+            <motion.nav 
+                initial='hidden'
+                animate='show'
+                variants={{
+                    hidden: {opacity: 0},
+                    show: {opacity: 1, delay: .3}
+                }}
+                className='bg-gray py-5 fixed top-0 left-0 right-0 z-[999] drop-shadow-lg'
+            >
                 <div className='container mx-auto flex items-center justify-between'>
                     <Link href='/' onClick={home}>
                         <h3 className='text-xl text-light-dark'>
@@ -99,7 +108,7 @@ const Navigation = () =>{
                         />
                     </button>
                 </div>
-            </nav>
+            </motion.nav>
             {/* menu mobile */}
             <div className={`fixed top-0 left-0 right-0 bg-light-blue py-11 px-5 z-30 ${openMenu} md:hidden transition-all ease-in-out duration-300`}>
                 <ul className='flex items-center flex-col gap-5 text-gray pb-8'>

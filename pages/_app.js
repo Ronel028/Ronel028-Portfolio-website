@@ -1,6 +1,4 @@
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css';
+import { motion } from 'framer-motion'
 import { Source_Sans_Pro } from '@next/font/google'
 import '../styles/globals.scss'
 
@@ -9,15 +7,24 @@ const sourceSansPro = Source_Sans_Pro({
   weight: ['400', '600', '700'],
 })
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
 
-  useEffect(() => {
-    AOS.init({});
-  }, []);
-
-  return <div className={sourceSansPro.className}>
+  return <motion.div 
+          key={router.route}
+          className={sourceSansPro.className} 
+          initial='pageInitial' 
+          animate='pageAnimate' 
+          variants={{
+            pageInitial:{
+              opacity: 0
+            },
+            pageAnimate: {
+              opacity: 1
+            }
+          }}
+        >
           <Component {...pageProps} />
-        </div>
+        </motion.div>
 
 }   
 

@@ -2,15 +2,13 @@ import Link from 'next/link'
 import { AiFillLinkedin, AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai'
 
 const Footer = () =>{
+
     return (
         <footer className='h-auto w-100 bg-dark text-gray py-[2.625rem] overflow-hidden'>
             <div className="container">
                 <div className='w-full h-auto'>
                     <div id='example-anchor' className='flex flex-col gap-[1.9375rem] mb-[4.5625rem] md:flex-row md:justify-between lg:mb-[2.4375rem]'>
-                        <div 
-                            data-aos="fade-right"
-                            data-aos-anchor="#example-anchor"
-                        >
+                        <div>
                             <h3
                                 className='text-[1.5625rem] tracking-[0.0625rem] md:text-xl md:mb-3 lg:text-[1.375rem]'
                             >
@@ -22,10 +20,7 @@ const Footer = () =>{
                                 Future software engineer
                             </p>
                         </div>
-                        <div
-                            data-aos="fade-left"
-                            data-aos-anchor="#example-anchor"
-                        >
+                        <div>
                             <h3
                                 className=' text-xl tracking-[0.0625rem] mb-3 md:text-lg'
                             >
