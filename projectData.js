@@ -88,7 +88,7 @@ export default [
         "title": "Notes App",
         "techUse": ["Javascript", "Express", "EJS", "CSS", "Mongodb"],
         "sourceCode": "https://github.com/Ronel028/notes-web-app",
-        "livePreview": "https://mynotes-web-app.herokuapp.com/",
+        "livePreview": "https://notes-web-app-teal.vercel.app/",
         "description":  <p className='font-normal text-[1rem] text-light-dark tracking-[1px] leading-6 mb-7 md:text-lg lg:mb-[46px]'>
                             Notes App is my personal projects that you save data like title and content
                             and also it has a functionality for create, read, update and delete data and
