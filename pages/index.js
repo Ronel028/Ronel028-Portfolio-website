@@ -74,7 +74,7 @@ export default function Main() {
                   >
                         Future <span className='font-bold'>software engineer</span>. I enjoy creating 
                         website and web applications. I'm currently learning <span className='font-bold'>React</span> and 
-                        improving my problem-solving skills to become a better developer.
+                        improving my problem-solving skills to become a good developer.
                   </motion.p>
                   <motion.div 
                     initial="hidden"
