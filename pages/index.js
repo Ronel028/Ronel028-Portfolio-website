@@ -1,8 +1,5 @@
-import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import AOS from 'aos'
-import 'aos/dist/aos.css';
 import { FaArrowDown, FaChevronRight } from 'react-icons/fa'
 import Navigation from '../components/Navigation';
 import Projects from '../components/project';
@@ -11,9 +8,6 @@ import Footer from '../components/Footer';
 
 export default function Main() {
 
-  useEffect(() => {
-    AOS.init({});
-  }, []);
 
   return (
     <>

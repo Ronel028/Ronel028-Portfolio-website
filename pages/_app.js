@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import { Source_Sans_Pro } from '@next/font/google'
 import '../styles/globals.scss'
 
@@ -7,6 +10,11 @@ const sourceSansPro = Source_Sans_Pro({
 })
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return <div className={sourceSansPro.className}>
           <Component {...pageProps} />
         </div>
