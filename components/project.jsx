@@ -17,7 +17,7 @@ const Projects = (props) =>{
                 type: 'spring',
                 bounce: 0.5,
                 duration: 0.6,
-                delay: 0.3
+                delay: 0.5
             }}
             className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}
         >
