@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { FiExternalLink } from 'react-icons/fi'
 import { AiFillGithub } from 'react-icons/ai'
 
@@ -9,7 +10,17 @@ const Projects = (props) =>{
 
 
     return (
-        <div className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}>
+        <motion.div
+            initial={{ opacity: 0, scale: .8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                type: 'spring',
+                bounce: 0.5,
+                duration: 0.6,
+                delay: 0.3
+            }}
+            className={`mb-28 flex flex-col ${flex_row} lg:items-center lg:gap-7`}
+        >
             <div
                 className='w-full lg:w-1/2 mb-7 relative 
                             before:content[""] before:absolute before:inset-0 before:bg-light-dark 
@@ -61,7 +72,7 @@ const Projects = (props) =>{
                     </li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

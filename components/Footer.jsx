@@ -1,5 +1,17 @@
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { AiFillLinkedin, AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai'
+
+const animateScroll = {
+    offscreen: {
+        opacity: 0,
+        y: 50
+    },
+    onscreen: {
+        opacity: 1,
+        y: 0,
+    }
+}
 
 const Footer = () =>{
 
@@ -8,7 +20,17 @@ const Footer = () =>{
             <div className="container">
                 <div className='w-full h-auto'>
                     <div id='example-anchor' className='flex flex-col gap-[1.9375rem] mb-[4.5625rem] md:flex-row md:justify-between lg:mb-[2.4375rem]'>
-                        <div>
+                        <motion.div
+                            initial='offscreen'
+                            whileInView='onscreen'
+                            variants={animateScroll}
+                            transition={{
+                                type: "spring",
+                                bounce: 0.5,
+                                duration: 0.7,
+                                delay: 0.3
+                            }}
+                        >
                             <h3
                                 className='text-[1.5625rem] tracking-[0.0625rem] md:text-xl md:mb-3 lg:text-[1.375rem]'
                             >
@@ -19,8 +41,18 @@ const Footer = () =>{
                             >
                                 Future software engineer
                             </p>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            initial='offscreen'
+                            whileInView='onscreen'
+                            variants={animateScroll}
+                            transition={{
+                                type: "spring",
+                                bounce: 0.5,
+                                duration: 0.7,
+                                delay: 0.3
+                            }}
+                        >
                             <h3
                                 className=' text-xl tracking-[0.0625rem] mb-3 md:text-lg'
                             >
@@ -39,13 +71,24 @@ const Footer = () =>{
                                     <AiFillTwitterSquare />
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className='text-center'>
+                    <motion.div 
+                        initial='offscreen'
+                        whileInView='onscreen'
+                        variants={animateScroll}
+                        transition={{
+                            type: "spring",
+                            bounce: 0.5,
+                            duration: 0.7,
+                            delay: 0.4
+                        }}
+                        className='text-center'
+                    >
                         <p className='font-bold text-sm'>
                             © Copyright 2022. Made by Ronel Florida
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </footer>

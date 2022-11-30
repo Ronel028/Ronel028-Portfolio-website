@@ -18,6 +18,17 @@ const animateLoad = {
   }
 }
 
+const animateScroll = {
+  offscreen: {
+    opacity: 0,
+    y: 50
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+  }
+}
+
 export default function Main() {
 
 
@@ -99,17 +110,35 @@ export default function Main() {
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3 
+              <motion.h3 
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.7,
+                  delay: 0.2
+                }}
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 About me<span className='text-light-blue'>.</span>
-              </h3>
-              <p 
+              </motion.h3>
+              <motion.p 
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.8,
+                  delay: 0.3
+                }}
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
               >
                 Here you will find information about me, My currrent skills 
                 and technology the I’ve been working with.
-              </p>
+              </motion.p>
             </div>
             {/* end title */}
 
@@ -117,12 +146,30 @@ export default function Main() {
             <div className='grid grid-cols-1 grid-rows-auto gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
 
               <div>
-                <h4
+                <motion.h4
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.4
+                  }}
                   className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
                 >
                   GET TO KNOW ME<span className='text-light-blue'>!</span>
-                </h4>
-                <p
+                </motion.h4>
+                <motion.p
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.5
+                  }}
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -130,8 +177,17 @@ export default function Main() {
                   interdum, ac aliquet odio mattis. Class aptent 
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
-                </p>
-                <p 
+                </motion.p>
+                <motion.p 
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.6
+                  }}
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -139,8 +195,17 @@ export default function Main() {
                   interdum, ac aliquet odio mattis. Class aptent 
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
-                </p>
-                <p
+                </motion.p>
+                <motion.p
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.7
+                  }}
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
                   Lorem ipsum dolor sit amet, consectetur 
@@ -148,17 +213,35 @@ export default function Main() {
                   interdum, ac aliquet odio mattis. Class aptent 
                   taciti sociosqu ad litora torquent per conubia 
                   nostra, per inceptos himenaeos.
-                </p>
+                </motion.p>
               </div>
 
               {/* skills */}
               <div>
-                <h4
+                <motion.h4
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.4
+                  }}
                   className='font-semibold text-lg tracking-[0.0625rem] mb-3 md:text-[1.625rem] md:mb-7 lg:text-xl'
                 >
                   TECHNOLOGY THAT I’VE BEEN WORKING WITH<span className='text-light-blue'>!</span>
-                </h4>
-                <div
+                </motion.h4>
+                <motion.div
+                  initial='offscreen'
+                  whileInView='onscreen'
+                  variants={animateScroll}
+                  transition={{
+                    type: "spring",
+                    bounce: 0.5,
+                    duration: 0.7,
+                    delay: 0.5
+                  }}
                   className='flex flex-wrap gap-6 text-light-dark font-semibold text-[1.0625rem] tracking-[0.0625rem]'
                 >
                   <div
@@ -206,7 +289,7 @@ export default function Main() {
                   >
                     SQL Basic
                   </div>
-                </div>
+                </motion.div>
               </div>
 
             </div>
@@ -215,22 +298,41 @@ export default function Main() {
         </section>
         {/* end about section */}
 
+        {/* project section */}
         <section id='projects' className='h-auto w-100 bg-gray text-light-dark py-[7.5625rem] overflow-hidden'>
           <div className='container'>
 
              {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3
+              <motion.h3
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.7,
+                  delay: 0.2
+                }}
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 My works<span className='text-light-blue'>.</span>
-              </h3>
-              <p
+              </motion.h3>
+              <motion.p
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.7,
+                  delay: 0.3
+                }}
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-xl md:mx-auto md:text-lg lg:text-xl'
               >
                 Here you will find all of my personal projects 
                 that I develop. 
-              </p>
+              </motion.p>
             </div>
             {/* end title */}
 
@@ -282,7 +384,16 @@ export default function Main() {
             {/* end project list */}
 
             {/* show more button */}
-            <div className='w-full flex items-center justify-center'>
+            <motion.div
+              initial={{ opacity: 0, scale: .8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                  type: 'spring',
+                  bounce: 0.5,
+                  duration: 0.6,
+                  delay: 0.3
+              }}
+              className='w-full flex items-center justify-center'>
               <Link 
                 href="/projects"
                 className='flex items-center gap-3 text-sm relative bg-dark py-4 px-5 justify-self-end tracking-[0.0625rem] leading-none z-10
@@ -294,28 +405,46 @@ export default function Main() {
                 <FaChevronRight className='text-sm'/>
 
               </Link>
-            </div>
+            </motion.div>
           </div>
         </section>
 
-        {/* project section */}
+        {/* contact section */}
         <section id='contact' className='h-auto w-100 bg-light-dark text-gray py-[7.5625rem] overflow-hidden'>
           <div className='container'>  
 
             {/* title */}
             <div className='text-center mb-[6.0625rem] md:mb-[8.125rem] lg:mb-36'>
-              <h3
+              <motion.h3
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.7,
+                  delay: 0.2
+                }}
                 className='text-[1.5625rem] tracking-[0.0625rem] mb-6 md:text-4xl lg:text-[2.5rem]'
               >
                 Contact<span className='text-light-blue'>.</span>
-              </h3>
-              <p 
+              </motion.h3>
+              <motion.p 
+                initial='offscreen'
+                whileInView='onscreen'
+                variants={animateScroll}
+                transition={{
+                  type: "spring",
+                  bounce: 0.5,
+                  duration: 0.7,
+                  delay: 0.3
+                }}
                 className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 md:max-w-[40.8125rem] md:mx-auto md:text-lg lg:text-xl'
               >
                 I’m open to job opportunity related to web development where 
                 I can contribute, learn and grow. If you have good opportunity 
                 that matches my skills then don’t hesitate to contact me.  
-              </p>
+              </motion.p>
             </div>
             {/* end title */}
 

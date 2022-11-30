@@ -1,6 +1,7 @@
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import validator from "validator"
+import { motion } from 'framer-motion'
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { MdOutlineError } from 'react-icons/md'
 
@@ -112,7 +113,17 @@ const ContactForm = () =>{
     }
 
     return (
-        <form className="w-full h-auto grid grid-flow-row gap-y-3 lg:max-w-[50.875rem] lg:mx-auto">
+        <motion.form 
+            initial={{ opacity: 0, scale: .8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                    type: 'spring',
+                    bounce: 0.5,
+                    duration: 0.6,
+                    delay: 0.3
+                }}
+            className="w-full h-auto grid grid-flow-row gap-y-3 lg:max-w-[50.875rem] lg:mx-auto"
+        >
             <div className={`w-auto py-4 px-5 items-center gap-3 transition-all ease-in-out duration-300
                 ${emailSent.bgColor} ${emailSent.display ? "block" : "hidden"}`}
             >
@@ -173,7 +184,7 @@ const ContactForm = () =>{
                     sending ? "SENDING..." : "SEND MESSAGE!" 
                 }
             </button>
-        </form>
+        </motion.form>
     )
 }
 
