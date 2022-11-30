@@ -1,9 +1,20 @@
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { FaArrowDown } from 'react-icons/fa'
 import Navigation from '../components/ProjectNavigation'
 import Projects from "../components/project"
 import projectData from '../projectData'
 import Footer from '../components/Footer'
+
+const animateLoad = {
+    hidden: { 
+        scale: .8,
+        opacity: 0 
+    },
+    show: {
+        scale: 1,
+        opacity: 1
+    }
+}
 
 const AllProjects = () =>{
 
@@ -21,9 +32,15 @@ const AllProjects = () =>{
                 <div className="container w-full h-full">
                     {/* title */}
                         <div className=' w-full h-full flex items-center justify-center text-center mb-[97px] md:mb-[130px] lg:mb-36'>
-                            <h3 className='text-[25px] tracking-[1px] mb-6 md:text-4xl lg:text-9xl uppercase'>
+                            <motion.h3 
+                                initial="hidden"
+                                animate="show"
+                                transition={{delay: .2}}
+                                variants={animateLoad}
+                                className='text-[25px] tracking-[1px] mb-6 md:text-4xl lg:text-9xl uppercase'
+                            >
                                 My works<span className='text-light-blue'>.</span>
-                            </h3>
+                            </motion.h3>
                         </div>
                     {/* end title */}
                 </div>
