@@ -39,7 +39,7 @@ const Footer = () =>{
                             <p
                                 className='text-[1.0625rem] tracking-[0.0625rem] md:text-base'
                             >
-                                Future software engineer
+                                Future Full Stack Developer
                             </p>
                         </motion.div>
                         <motion.div
