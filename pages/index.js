@@ -189,9 +189,12 @@ export default function Main() {
                   }}
                   className='font-normal text-[0.9375rem] tracking-[0.0625rem] leading-6 mb-4 md:text-xl md:leading-[1.875rem] md:mb-8 lg:text-lg lg:mb-9'
                 >
-                  I'm Introvert person I always feel comfortable being alone. I like Sci-fi movies
+                  {/* I'm Introvert person I always feel comfortable being alone. I like Sci-fi movies
                   and anime. I also develop many personal project and I'm happy to share with you 
-                  so please check in the <span className='font-bold'>Project</span> section.
+                  so please check in the <span className='font-bold'>Project</span> section. */}
+                  I am a motivated and enthusiastic self-taught web developer with a passion for learning new 
+                  technologies. I am constantly looking for ways to improve my skills and expand my knowledge. 
+                  
                 </motion.p>
                 <motion.p
                   initial='offscreen'
