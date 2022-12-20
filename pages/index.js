@@ -287,6 +287,11 @@ export default function Main() {
                   >
                     SQL Basic
                   </div>
+                  <div 
+                    className='py-3 px-4 bg-gray'
+                  >
+                    PHP
+                  </div>
                 </motion.div>
               </div>
 
