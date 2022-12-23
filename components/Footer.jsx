@@ -61,7 +61,7 @@ const Footer = () =>{
                             <div
                                 className='flex items-center gap-[1.125rem] text-[1.75rem] md:text-[1.625rem]'
                             >
-                                <Link href="#" className='hover:scale-110 transition-all ease-in-out duration-300'>
+                                <Link href="https://www.linkedin.com/in/ronelflorida/" className='hover:scale-110 transition-all ease-in-out duration-300'>
                                     <AiFillLinkedin />
                                 </Link>
                                 <Link href="#" className='hover:scale-110 transition-all ease-in-out duration-300'>
